@@ -1,0 +1,10 @@
+.site-layout-content {
+  min-height: 280px;
+  padding: 4em;
+  background-image: url(../../assets/images/bg-blk.jpg);
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-size: 5em;
+}

@@ -1,10 +1,10 @@
 import "./App.css";
-import Layout from "./components/Layout/Layout";
+import PortfolioLayout from "./components/PortfolioLayout/PortfolioLayout";
 
 function App() {
   return (
     <div>
-      <Layout />
+      <PortfolioLayout />
     </div>
   );
 }
