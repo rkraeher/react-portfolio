@@ -1,7 +1,8 @@
 .site-layout-content {
   min-height: 280px;
   padding: 4em;
-  background-color: black;
+  /* Split into two colors */
+  background-color: #353535; 
 }
 
 .header {

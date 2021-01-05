@@ -1,52 +1,59 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import './PortCards.css';
+import directory from "../../assets/images/directory.jpg";
 import { Card, Col, Row } from 'antd';
+
+const { Meta } = Card;
 
 function PortCards() {
     return (
-        <div>
-            <div className="site-card-wrapper">
-                <Row gutter={16}>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-            </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-            </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-            </Card>
-                    </Col>
-                </Row>
+        <div style={{ backgroundColor: "#ececec" }}>
+            <Row gutter={16} className="container" >
+                <Col lg={9} offset={1}>
+                    <Card
+                        hoverable
+                        style={{ width: "25vw", margin: 50 }}
+                        cover={<img alt="directory app" src={directory} />}
+                    >
+                        <Meta style={{ margin: 20, textAlign: "center" }} title="Employee Directory" description="A sortable employee directory built with React." />
 
-            </div>
-            <div className="site-card-wrapper">
-                <Row gutter={16}>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>
-                            Card content
-        </Card>
-                    </Col>
-                </Row>
+                        <p style={{ margin: 20, textAlign: "center" }}>Put Github Icon Here in Middle</p>
 
-            </div>
-        </div>
+                    </Card>
+                </Col>
+                <Col lg={9}>
+                    <Card
+                        hoverable
+                        style={{ width: "25vw", margin: 50 }}
+                        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                    >
+                        <Meta title="Europe Street beat" description="www.instagram.com" />
+                    </Card>
+                </Col>
+            </Row>
+
+            <Row gutter={16} className="container" >
+                <Col lg={9} offset={1}>
+                    <Card
+                        hoverable
+                        style={{ width: "25vw", margin: 50 }}
+                        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                    >
+                        <Meta title="Europe Street beat" description="www.instagram.com" />
+                    </Card>
+                </Col>
+                <Col lg={9}>
+                    <Card
+                        hoverable
+                        style={{ width: "25vw", margin: 50 }}
+                        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                    >
+                        <Meta title="Europe Street beat" description="www.instagram.com" />
+                    </Card>
+                </Col>
+            </Row>
+        </div >
     );
 }
 export default PortCards;

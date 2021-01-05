@@ -3,8 +3,8 @@ body {
   }
   
 .bio {
-    color:whitesmoke; 
-    font-size: 2vw;
+    color:white; 
+    font-size: 1.5vw;
   }
 
 .container {
@@ -16,9 +16,23 @@ body {
     line-height: 3;
     font-size: 3vw;
     text-align: center;
-    /* Change color to primary */
-    color: whitesmoke; 
+    color: white; 
   }
+
+.heading h2 {
+  line-height: 1.5;
+  font-size: 2.5vw;
+  text-align: center;
+  color: white; 
+  margin-top: 30px;
+}
+
+.heading h3 {
+  line-height: 1.5;
+  font-size: 2.0vw;
+  text-align: center;
+  color: white; 
+}
 
 .pic {
     height: 25vw;
