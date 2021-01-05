@@ -4,7 +4,7 @@ body {
   
 .bio {
     color:whitesmoke; 
-    font-size: 2.5em;
+    font-size: 2vw;
   }
 
 .container {
@@ -14,13 +14,15 @@ body {
 
 .heading h1 {
     line-height: 3;
-    font-size: 5em;
+    font-size: 3vw;
+    text-align: center;
     /* Change color to primary */
     color: whitesmoke; 
   }
 
 .pic {
-    height: 700px;
-    width: 700px;
+    height: 25vw;
+    width: 25vw;
     border-radius: 50%;
-}
+    object-fit: contain;
+  }

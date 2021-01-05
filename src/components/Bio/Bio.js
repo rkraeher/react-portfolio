@@ -12,7 +12,7 @@ function Bio() {
                     <h1>Developer | Writer | Educator</h1>
 
                     <div className="bio">
-                        <p> Rudi (he/him) is a Full Stack Web Developer specializing in React with a background in media research and higher education.
+                        <p> Rudi (he/him) is a Full Stack Web Developer specializing in React with a background in media and cultural studies.
     </p>
                         <p>
                             Rudi is currently completing a PhD in English from the University of California, Riverside. His
@@ -29,9 +29,7 @@ function Bio() {
                  </a>
                         </p>
                         <p>
-                            Rudi teaches university classes on film, art, and American literature. Rudi's pedagogy foregrounds
-                            the role of desire and pleasure in his analysis of creative cultural production. Rudi's training and
-                            experience in education, research, and arts writing enables him to offer criticality and conceptual
+                            Rudi's training and experience in education, research, and arts writing enables him to offer criticality and conceptual
                             thinking in working with clients on modern web applications.
                 </p>
                     </div>

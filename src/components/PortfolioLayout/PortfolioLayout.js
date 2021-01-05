@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import { Layout, Menu } from 'antd';
 import "./PortfolioLayout.css";
 import Project from "../Project/Project";
@@ -13,9 +14,10 @@ function PortfolioLayout() {
                         <Menu.Item key="1">Bio</Menu.Item>
                         <Menu.Item key="2">Projects</Menu.Item>
                         <Menu.Item key="3">Contact</Menu.Item>
+                        <Menu.Item key="4" style={{ float: "right" }}>Rudi Kraeher</Menu.Item>
                     </Menu>
                 </Header>
-                <Content style={{ padding: '0 50px', margin: '50px 0' }} className="content">
+                <Content className="content">
                     <div className="site-layout-content">
                         <Project />
                     </div>
@@ -28,6 +30,3 @@ function PortfolioLayout() {
 
 export default PortfolioLayout;
 
-{/* Put my name on the right side of the navbar */ }
-{/* Menu Items will need to Link */ }
-// There is some problem when I reload the page. Might have to do with no router yet
