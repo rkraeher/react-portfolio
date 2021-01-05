@@ -1,12 +1,10 @@
 body {
-    font-family: 'Ubuntu', sans-serif; 
     line-height: 1.8;
   }
   
 .bio {
     color:whitesmoke; 
     font-size: 2.5em;
-    font-weight: 550;
   }
 
 .container {
@@ -17,13 +15,12 @@ body {
 .heading h1 {
     line-height: 3;
     font-size: 5em;
-    font-weight: bold;
-    color: whitesmoke;
+    /* Change color to primary */
+    color: whitesmoke; 
   }
 
 .pic {
     height: 700px;
     width: 700px;
     border-radius: 50%;
-    /* margin-bottom: 70px; */
 }

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.less";
 import PortfolioLayout from "./components/PortfolioLayout/PortfolioLayout";
 
 function App() {
