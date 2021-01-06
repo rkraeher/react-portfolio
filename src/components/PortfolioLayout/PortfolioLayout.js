@@ -28,7 +28,7 @@ function PortfolioLayout() {
                     <Menu theme="dark" mode="horizontal" style={{ backgroundColor: "#284B63", fontSize: "1.5vw" }}>
                         <Menu.Item key="1" onClick={() => setCurrentView(<Bio />)}>Bio</Menu.Item>
                         <Menu.Item key="2" onClick={() => setCurrentView(<PortCards />)}>Projects</Menu.Item>
-                        <Menu.Item key="3">Contact</Menu.Item>
+                        <Menu.Item key="3" onClick={() => setCurrentView(<Home />)}>Contact</Menu.Item>
                         <Menu.Item key="4">
                             <a target="blank_" href="https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharing">
                                 Resume
