@@ -9,6 +9,8 @@ import { Card, Col, Row } from 'antd';
 
 const { Meta } = Card;
 
+//TODO: Needs a lot of responsive sizing work and some media queries
+
 function PortCards() {
     return (
         <div style={{ backgroundColor: "#ececec" }}>
@@ -24,7 +26,7 @@ function PortCards() {
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
                                 description="Sortable employee directory built with React." />
 
-                            <p style={{ textAlign: "center" }}>Put Github Icon Here in Middle</p>
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
 
                         </Card>
                     </a>
@@ -41,7 +43,8 @@ function PortCards() {
 
                                 description="CRM app for tracking rental leads. Built with Express and Sequelize." />
 
-                            <p style={{ textAlign: "center" }}>Put Github Icon Here in Middle</p>
+
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
                         </Card>
                     </a>
                 </Col>
@@ -59,7 +62,8 @@ function PortCards() {
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
                                 description="Tourism and hospitality website for visitors to Southern California." />
 
-                            <p style={{ textAlign: "center" }}>Put Github Icon Here in Middle</p>
+
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
                         </Card>
                     </a>
                 </Col>
@@ -75,7 +79,8 @@ function PortCards() {
 
                                 description="Web app for tracking your workouts. Built with Express and Mongoose." />
 
-                            <p style={{ textAlign: "center" }}>Put Github Icon Here in Middle</p>
+
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
                         </Card>
                     </a>
                 </Col>

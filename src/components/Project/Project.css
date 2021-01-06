@@ -4,7 +4,7 @@ body {
   
 .bio {
     color:white; 
-    font-size: 1.5vw;
+    font-size: 2em;
   }
 
 .container {
@@ -14,14 +14,14 @@ body {
 
 .heading h1 {
     line-height: 3;
-    font-size: 3vw;
+    font-size: 3.25em;
     text-align: center;
     color: white; 
   }
 
 .heading h2 {
   line-height: 1.5;
-  font-size: 2.5vw;
+  font-size: 3em;
   text-align: center;
   color: white; 
   margin-top: 30px;
@@ -29,7 +29,7 @@ body {
 
 .heading h3 {
   line-height: 1.5;
-  font-size: 2.0vw;
+  font-size: 2.75em;
   text-align: center;
   color: white; 
 }
@@ -42,8 +42,10 @@ body {
 }
 
 .pic {
-    height: 25vw;
-    width: 25vw;
+    height: 30vw;
+    width: 30vw;
     border-radius: 50%;
     object-fit: contain;
   }
+
+  /* TODO: Media queries needed */
