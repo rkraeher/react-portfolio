@@ -21,10 +21,10 @@ function Bio() {
                             to the Present" is an analysis of experimental American artists intervening in discourses of aesthetic form and
                             embodied difference. </p>
 
-                        <p>My writing on contemporary art has been published on
+                        <p>My writing on contemporary art has been published on KCET's
                             <a href="https://www.kcet.org/shows/artbound/soldadera-memory-machine"
                                 target="_blank"
-                                rel="noreferrer"> KCET's Artbound
+                                rel="noreferrer"> Artbound
                             </a> and in the catalogue for the landmark 2017 art exhibition,
                             <a href="https://www.artbook.com/9780982304686.html"
                                 target="_blank"
