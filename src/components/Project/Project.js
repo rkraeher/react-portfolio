@@ -1,12 +1,12 @@
-import Bio from "../Bio/Bio";
-import PortCards from "../PortCards/PortCards";
-import Home from "../Home";
+// import Bio from "../Bio/Bio";
+// import PortCards from "../PortCards/PortCards";
+// import Home from "../Home";
 
 
-function Project(props) {
+function Project({ currentView }) {
     return (
         <div>
-            {props}
+            {currentView}
         </div>
     );
 }
