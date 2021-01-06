@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
 
-            <Row className="heading container">
+            <Row className="heading container" type="flex" style={{ justifyContent: "center" }}>
                 <Col md={6}>
                     <h1>Rudi Kraeher</h1>
                 </Col>
