@@ -9,11 +9,11 @@ import Home from "../Home";
 
 const { Header, Content, Footer } = Layout;
 
-function handleOver(e) {
+function handleLeave(e) {
     e.target.style.background = "#284B63";
     e.target.style.color = "white";
 }
-function handleLeave(e) {
+function handleOver(e) {
     e.target.style.background = "#F0F2F5";
     e.target.style.color = "black";
 }

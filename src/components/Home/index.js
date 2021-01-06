@@ -7,22 +7,14 @@ const Home = () => {
     return (
         <div>
 
-            <Row className="heading container" type="flex" style={{ justifyContent: "center" }}>
-                <Col md={6}>
+            <Row gutter={16} className="heading" type="flex" style={{ justifyContent: "start" }}>
+                <Col md={12} offset={1}>
                     <h1>Rudi Kraeher</h1>
-                </Col>
-            </Row>
-
-            <ProfilePic />
-
-            <Row className="heading container">
-                <Col md={12}>
                     <h2>Full Stack Web Developer</h2>
                     <h3>HTML/CSS | JavaScript | React | Node</h3>
                 </Col>
+                <ProfilePic />
             </Row>
-
-            {/* Put my contact font awesome icons down here */}
         </div >
     )
 }
