@@ -34,6 +34,13 @@ body {
   color: white; 
 }
 
+.icons {
+  margin: 2vw;
+  padding: 1vh;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .pic {
     height: 25vw;
     width: 25vw;
