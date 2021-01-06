@@ -21,14 +21,16 @@ function Bio() {
                             to the Present" is an analysis of experimental American artists intervening in discourses of aesthetic form and
                             embodied difference. </p>
 
-                        <p>My writing on contemporary art has been published on KCET's
+                        <p>My writing on contemporary art has been published on
                             <a href="https://www.kcet.org/shows/artbound/soldadera-memory-machine"
                                 target="_blank"
-                                rel="noreferrer"> Artbound
+                                rel="noreferrer"
+                                style={{ color: "black", fontWeight: "bold" }}> KCET's Artbound
                             </a> and in the catalogue for the landmark 2017 art exhibition,
                             <a href="https://www.artbook.com/9780982304686.html"
                                 target="_blank"
-                                rel="noreferrer"> Mundos Alternos.
+                                rel="noreferrer"
+                                style={{ color: "black", fontWeight: "bold" }}> Mundos Alternos.
                             </a>
                         </p>
                         <p>
@@ -40,7 +42,7 @@ function Bio() {
 
                 </Col>
             </Row>
-        </div>
+        </div >
     );
 }
 export default Bio;
