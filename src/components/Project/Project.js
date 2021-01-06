@@ -2,12 +2,11 @@ import Bio from "../Bio/Bio";
 import PortCards from "../PortCards/PortCards";
 import Home from "../Home";
 
-function Project() {
+
+function Project(props) {
     return (
         <div>
-            {/* <Bio /> */}
-            <PortCards />
-            {/* <Home /> */}
+            {props}
         </div>
     );
 }
