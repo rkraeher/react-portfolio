@@ -9,7 +9,7 @@ import { Card, Col, Row } from 'antd';
 
 const { Meta } = Card;
 
-//TODO: Needs a lot of responsive sizing work and some media queries
+//TODO: Needs a lot of responsive sizing work, media queries, and the markup should be located in another component with props
 
 function PortCards() {
     return (
@@ -26,8 +26,9 @@ function PortCards() {
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
                                 description="Sortable employee directory built with React." />
 
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
-
+                            <a target="blank_" href="https://github.com/rkraeher/employee-directory-react">
+                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            </a>
                         </Card>
                     </a>
                 </Col>
@@ -38,13 +39,13 @@ function PortCards() {
                             style={{ width: "30vw", minHeight: "20vh", margin: 50, fontSize: "1.5vw", textAlign: "center" }}
                             cover={<img alt="binder app" src={binder} />}
                         >
-                            <h1>Binder Lead Management</h1>
+                            <h1>Bindrr Lead Management</h1>
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-
                                 description="CRM app for tracking rental leads. Built with Express and Sequelize." />
 
-
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <a target="blank_" href="https://github.com/rkraeher/bindrr">
+                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            </a>
                         </Card>
                     </a>
                 </Col>
@@ -62,8 +63,9 @@ function PortCards() {
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
                                 description="Tourism and hospitality website for visitors to Southern California." />
 
-
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <a target="blank_" href="https://github.com/rkraeher/SuggestSoCal">
+                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            </a>
                         </Card>
                     </a>
                 </Col>
@@ -76,11 +78,11 @@ function PortCards() {
                         >
                             <h1>Workout Tracker</h1>
                             <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-
                                 description="Web app for tracking your workouts. Built with Express and Mongoose." />
 
-
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <a target="blank_" href="https://github.com/rkraeher/workout-tracker">
+                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            </a>
                         </Card>
                     </a>
                 </Col>

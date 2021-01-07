@@ -12,7 +12,7 @@ function Bio() {
 
                     <div className="bio">
                         <p> I am a Full Stack Web Developer specializing in React with a background in media and cultural studies.
-                        I create easy to use applications for logistics, education, and relationship management.
+                        I create easy to use applications for logistics, education, and customer relationship management.
                         </p>
 
                         <p>
@@ -35,7 +35,7 @@ function Bio() {
                         </p>
                         <p>
                             My experience in teaching and research has helped
-                            me in my development work, especially in learning new
+                            me in my development, especially when learning new
                             skills and technologies while building modern web applications.
                          </p>
                     </div>
