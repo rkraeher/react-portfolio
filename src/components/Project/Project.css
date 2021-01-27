@@ -4,6 +4,7 @@ body {
   
 .bio {
     color:white; 
+    /* Make this font a bit smaller with a media query on phone */
     font-size: 2em;
   }
 

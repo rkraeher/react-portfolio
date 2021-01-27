@@ -24,6 +24,10 @@
     margin: 5px;
 }
 
+#name {
+    color: white;
+}
+
 .pic {
     height: 30em;
     width: 30em;
@@ -42,10 +46,6 @@
 
 @media only screen and (max-width: 1007px) {
     .home-container{
-        display: grid;
-        margin-top: 30px;
-        grid-gap: 20px;
-        justify-content: center;
         grid-template-columns: 100%;
         grid-template-areas:
         "text" 

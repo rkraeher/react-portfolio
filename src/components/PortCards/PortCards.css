@@ -1,5 +1,68 @@
+h1 {
+  color: black;
+}
+
 .site-card-wrapper {
     padding: 30px;
     background: #ececec;
     margin: 3em;
   }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin-top: 20px;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+    "card-left card-right"
+    "card-bleft card-bright";
+}
+
+.card-left{
+  grid-area: card-left;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.card-right{
+  grid-area: card-right;
+  text-align: center;
+  min-height: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.card-bleft{
+  grid-area: card-bleft;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.card-bright{
+  grid-area: card-bright;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1007px) {
+  .card-container{
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "card-left"
+    "card-right"
+    "card-bleft"
+    "card-bright";
+  }
+}

@@ -6,10 +6,8 @@ function Bio() {
         <div>
 
             <Row className="heading container">
-                <Col md={12}>
+                <Col lg={20}>
                     <h1>Developer | Writer | Educator</h1>
-
-
                     <div className="bio">
                         <p> I am a Full Stack Web Developer specializing in React with a background in media and cultural studies.
                         I create easy to use applications for logistics, education, and customer relationship management.
@@ -39,7 +37,6 @@ function Bio() {
                             skills and technologies while building modern web applications.
                          </p>
                     </div>
-
                 </Col>
             </Row>
         </div >

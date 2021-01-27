@@ -4,90 +4,93 @@ import './PortCards.css';
 import directory from "../../assets/images/directory.jpg";
 import binder from "../../assets/images/binder-stock.jpg";
 import socal from "../../assets/images/socal.jpg";
-import workout from "../../assets/images/workout.jpg";
+import warehouse from "../../assets/images/warehouse.jpg";
 import { Card, Col, Row } from 'antd';
 
 const { Meta } = Card;
 
-//TODO: Needs a lot of responsive sizing work, media queries, and the markup should be located in another component with props
+//TODO: Need to resize cards with media queries. They have antd styles. 
+//https://stackoverflow.com/questions/49541607/how-can-you-make-the-cards-for-ant-design-smaller
+//https://stackoverflow.com/questions/54491645/media-query-syntax-for-reactjs#:~:text=You%20cannot%20set%20media%20queries,and%20then%20import%20the%20stylesheet.&text=css'%20to%20the%20top%20of,a%20specific%20react%20component%20file.
+//https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
 
 function PortCards() {
     return (
-        <div style={{ backgroundColor: "#ececec" }}>
-            <Row gutter={16} className="container" >
-                <Col lg={9}>
-                    <a target="blank_" href="https://rkraeher.github.io/employee-directory-react">
-                        <Card
-                            hoverable
-                            style={{ width: "30vw", minHeight: "20vh", margin: 50, fontSize: "1.5vw", textAlign: "center" }}
-                            cover={<img alt="directory app" src={directory} />}
-                        >
-                            <h1>Employee Directory</h1>
-                            <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-                                description="Sortable employee directory built with React." />
+        <div className="card-container" style={{ backgroundColor: "#ececec" }}>
+            <div className="card-left">
+                {/* Everything inside the a should be a component, with props. First, fix card size issue. */}
+                <a target="blank_" href="https://lit-wildwood-97501.herokuapp.com">
+                    <Card
+                        hoverable
+                        // The width below is what needs to change in media queries
+                        style={{ width: "20em", minHeight: "20vh", margin: 50, fontSize: "2em", textAlign: "center" }}
+                        cover={<img alt="binder app" style={{ height: 360 }} src={binder} />}
+                    >
+                        <h1>Bindrr</h1>
+                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
+                            description="CRM app for tracking rental leads. Built with Express and Sequelize." />
 
-                            <a target="blank_" href="https://github.com/rkraeher/employee-directory-react">
-                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
-                            </a>
-                        </Card>
-                    </a>
-                </Col>
-                <Col lg={9}>
-                    <a target="blank_" href="https://lit-wildwood-97501.herokuapp.com">
-                        <Card
-                            hoverable
-                            style={{ width: "30vw", minHeight: "20vh", margin: 50, fontSize: "1.5vw", textAlign: "center" }}
-                            cover={<img alt="binder app" src={binder} />}
-                        >
-                            <h1>Bindrr Lead Management</h1>
-                            <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-                                description="CRM app for tracking rental leads. Built with Express and Sequelize." />
+                        <a target="blank_" href="https://github.com/rkraeher/bindrr">
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                        </a>
+                    </Card>
+                </a>
+            </div>
+            <div className="card-right">
+                <a target="blank_" href="https://inhouse-tracker.herokuapp.com/">
+                    <Card
+                        hoverable
+                        style={{ width: "20em", minHeight: "20vh", margin: 50, fontSize: "2em", textAlign: "center" }}
+                        cover={<img alt="workout tracker" style={{ height: 360 }} src={warehouse} />}
+                    >
+                        <h1>inHouse</h1>
+                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
+                            description="Warehouse inventory tracking system. MERN Stack Application." />
 
-                            <a target="blank_" href="https://github.com/rkraeher/bindrr">
-                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
-                            </a>
-                        </Card>
-                    </a>
-                </Col>
-            </Row>
+                        <a target="blank_" href="https://github.com/Nolanws1/inHouse">
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                        </a>
+                    </Card>
+                </a>
+            </div>
+            <div className="card-bleft">
+                <a target="blank_" href="https://rkraeher.github.io/employee-directory-react">
+                    <Card
+                        hoverable
+                        style={{ width: "20em", minHeight: "20vh", margin: 50, fontSize: "2em", textAlign: "center" }}
+                        cover={<img alt="directory app" style={{ height: 360 }} src={directory} />}
+                    >
+                        <h1>Employee Directory</h1>
+                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
+                            description="Sortable employee directory built with React." />
 
-            <Row gutter={16} className="container" >
-                <Col lg={9}>
-                    <a target="blank_" href="https://rkraeher.github.io/SuggestSoCal">
-                        <Card
-                            hoverable
-                            style={{ width: "30vw", minHeight: "20vh", margin: 50, fontSize: "1.5vw", textAlign: "center" }}
-                            cover={<img alt="suggest socal" src={socal} />}
-                        >
-                            <h1>Suggest Socal</h1>
-                            <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-                                description="Tourism and hospitality website for visitors to Southern California." />
+                        <a target="blank_" href="https://github.com/rkraeher/employee-directory-react">
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                        </a>
+                    </Card>
+                </a>
+            </div>
+            <div className="card-bright">
+                <a target="blank_" href="https://rkraeher.github.io/SuggestSoCal">
+                    <Card
+                        hoverable
+                        style={{
+                            width: "20em",
+                            minHeight: "20vh", margin: 50, fontSize: "2em", textAlign: "center"
+                        }}
+                        cover={<img alt="suggest socal" style={{ height: 360 }} src={socal} />}
+                    >
+                        <h1>Suggest Socal</h1>
+                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
+                            description="Tourism website for visitors to Southern California." />
 
-                            <a target="blank_" href="https://github.com/rkraeher/SuggestSoCal">
-                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
-                            </a>
-                        </Card>
-                    </a>
-                </Col>
-                <Col lg={9}>
-                    <a target="blank_" href="https://workout-tracker-20-v1.herokuapp.com">
-                        <Card
-                            hoverable
-                            style={{ width: "30vw", minHeight: "20vh", margin: 50, fontSize: "1.5vw", textAlign: "center" }}
-                            cover={<img alt="workout tracker" src={workout} />}
-                        >
-                            <h1>Workout Tracker</h1>
-                            <Meta style={{ margin: 2, textAlign: "center", fontSize: "1.5vw" }}
-                                description="Web app for tracking your workouts. Built with Express and Mongoose." />
-
-                            <a target="blank_" href="https://github.com/rkraeher/workout-tracker">
-                                <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
-                            </a>
-                        </Card>
-                    </a>
-                </Col>
-            </Row>
-        </div >
+                        <a target="blank_" href="https://github.com/rkraeher/SuggestSoCal">
+                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                        </a>
+                    </Card>
+                </a>
+            </div>
+        </div>
     );
 }
 export default PortCards;
