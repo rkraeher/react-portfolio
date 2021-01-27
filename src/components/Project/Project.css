@@ -34,18 +34,5 @@ body {
   color: white; 
 }
 
-.icons {
-  margin: 2vw;
-  padding: 1vh;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.pic {
-    height: 30vw;
-    width: 30vw;
-    border-radius: 50%;
-    object-fit: contain;
-  }
 
   /* TODO:Media queries needed */

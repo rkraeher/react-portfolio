@@ -4,9 +4,14 @@
   background: #3E5151;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-.header {
-  font-size: 5em;
-}
+@media only screen and (max-width: 640px) {
+  /* Change these to icons */
+  .menu-item {
+    font-size: 0.75em;
+  }
+  #home {
+    display: none;
+  }
+} 
