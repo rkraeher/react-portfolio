@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./PortfolioLayout.css";
 import Project from "../Project/Project";
 import Bio from "../Bio/Bio";
-import PortCards from "../PortCards/PortCards";
+import PortCards from "../PortCards";
 import Home from "../Home";
 
 const { Header, Content, Footer } = Layout;

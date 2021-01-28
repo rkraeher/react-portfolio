@@ -1,30 +1,48 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import './PortCards.css';
+import React from "react"
+import "antd/dist/antd.css";
+import "./styles.css";
 import directory from "../../assets/images/directory.jpg";
 import binder from "../../assets/images/binder-stock.jpg";
 import socal from "../../assets/images/socal.jpg";
 import warehouse from "../../assets/images/warehouse.jpg";
 import { Card } from 'antd';
 
+
+//TODO: Everything inside the a should be a component
+
+
 function PortCards() {
     const { Meta } = Card;
+    const styles = {
+        img: {
+            height: 360
+        },
+        topCards: {
+            flexBasis: "auto", maxWidth: "22em",
+            minHeight: "23em", marginTop: "3em",
+            fontSize: "2em", textAlign: "center"
+        },
+        botCards: {
+            marginBottom: "3em"
+        }
+    }
 
     return (
         <div className="card-container">
             <div className="card-left">
-                {/* Everything inside the a should be a component, with props. First, fix card size issue. */}
                 <a target="blank_" href="https://lit-wildwood-97501.herokuapp.com">
                     <Card
                         hoverable
                         className="cards"
-                        cover={<img alt="binder app" style={{ height: 360 }} src={binder} />}
+                        style={styles.topCards}
+                        cover={<img alt="binder app" style={styles.img} src={binder} />}
                     >
                         <h1>Bindrr</h1>
-                        <Meta className="card-desc" style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
-                            description="CRM app for tracking rental leads. Built with Express and Sequelize." />
+                        <Meta className="card-desc"
+                            description="CRM app to track rental leads. Built with Express and Sequelize." />
                         <a target="blank_" href="https://github.com/rkraeher/bindrr">
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <br></br>
+                            <i className="fab fa-github fa-4x"></i>
                         </a>
                     </Card>
                 </a>
@@ -34,14 +52,15 @@ function PortCards() {
                     <Card
                         hoverable
                         className="cards"
-                        cover={<img alt="warehouse" style={{ height: 360 }} src={warehouse} />}
+                        style={styles.topCards}
+                        cover={<img alt="warehouse" style={styles.img} src={warehouse} />}
                     >
                         <h1>inHouse</h1>
-                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
+                        <Meta className="card-desc"
                             description="Warehouse inventory tracking system. MERN Stack Application." />
-
                         <a target="blank_" href="https://github.com/Nolanws1/inHouse">
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <br></br>
+                            <i className="fab fa-github fa-4x"></i>
                         </a>
                     </Card>
                 </a>
@@ -50,15 +69,17 @@ function PortCards() {
                 <a target="blank_" href="https://rkraeher.github.io/employee-directory-react">
                     <Card
                         hoverable
-                        style={{ flexBasis: "auto", maxWidth: "22em", minHeight: "27em", margin: "1em", fontSize: "2em", textAlign: "center" }}
-                        cover={<img alt="directory app" style={{ height: 360 }} src={directory} />}
+                        className="cards"
+                        id="dir-app"
+                        style={{ ...styles.topCards, ...styles.botCards }}
+                        cover={<img alt="directory app" style={styles.img} src={directory} />}
                     >
-                        <h1>Employee Directory</h1>
-                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
-                            description="Sortable employee directory built with React." />
-
+                        <h1>Easy Directory</h1>
+                        <Meta className="card-desc"
+                            description="Sortable directory built with React and Bootstrap." />
                         <a target="blank_" href="https://github.com/rkraeher/employee-directory-react">
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <br></br>
+                            <i className="fab fa-github fa-4x"></i>
                         </a>
                     </Card>
                 </a>
@@ -67,16 +88,16 @@ function PortCards() {
                 <a target="blank_" href="https://rkraeher.github.io/SuggestSoCal">
                     <Card
                         hoverable
-                        className=""
-                        style={{ flexBasis: "auto", maxWidth: "22em", minHeight: "27em", margin: "1em", fontSize: "2em", textAlign: "center" }}
-                        cover={<img alt="suggest socal" style={{ height: 360 }} src={socal} />}
+                        className="cards"
+                        style={{ ...styles.topCards, ...styles.botCards }}
+                        cover={<img alt="suggest socal" style={styles.img} src={socal} />}
                     >
                         <h1>Suggest Socal</h1>
-                        <Meta style={{ margin: 2, textAlign: "center", fontSize: "1em" }}
-                            description="Tourism website for Southern California." />
-
+                        <Meta className="card-desc"
+                            description="Traveler recommendation site for Southern California." />
                         <a target="blank_" href="https://github.com/rkraeher/SuggestSoCal">
-                            <i className="fab fa-github fa-4x" style={{ margin: "1vw" }}></i>
+                            <br></br>
+                            <i className="fab fa-github fa-4x"></i>
                         </a>
                     </Card>
                 </a>

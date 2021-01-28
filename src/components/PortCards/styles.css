@@ -2,15 +2,6 @@ h1 {
   color: black;
 }
 
-.cards{
-  flex-basis: auto; 
-  max-width: 22em;
-  min-height: 27em; 
-  margin: 3em;
-  font-size: 2em; 
-  text-align: center;
-}
-
 .card-container{
   background-color: #ececec;
     display: grid;
@@ -21,6 +12,12 @@ h1 {
     grid-template-areas:
     "card-left card-right"
     "card-bleft card-bright";
+}
+
+.card-desc{
+  margin: 2px; 
+  text-align: center; 
+  font-size: 1em;
 }
 
 .card-left{
@@ -76,16 +73,13 @@ h1 {
     "card-bleft"
     "card-bright";
   }
+  #dir-app {
+    margin-bottom: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .cards{
-    margin: 1em;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-    .card-desc{
-    display: none;
+    margin: 1em !important;
   }
 }
