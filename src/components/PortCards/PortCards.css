@@ -2,13 +2,17 @@ h1 {
   color: black;
 }
 
-.site-card-wrapper {
-    padding: 30px;
-    background: #ececec;
-    margin: 3em;
-  }
+.cards{
+  flex-basis: auto; 
+  max-width: 22em;
+  min-height: 27em; 
+  margin: 3em;
+  font-size: 2em; 
+  text-align: center;
+}
 
-  .card-container{
+.card-container{
+  background-color: #ececec;
     display: grid;
     grid-template-columns: 45% 45%;
     margin-top: 20px;
@@ -56,6 +60,13 @@ h1 {
   margin: 5px;
 }
 
+.site-card-wrapper {
+  padding: 30px;
+  background: #ececec;
+  margin: 3em;
+}
+
+
 @media only screen and (max-width: 1007px) {
   .card-container{
     grid-template-columns: 100%;
@@ -64,5 +75,17 @@ h1 {
     "card-right"
     "card-bleft"
     "card-bright";
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cards{
+    margin: 1em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+    .card-desc{
+    display: none;
   }
 }

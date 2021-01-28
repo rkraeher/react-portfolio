@@ -1,4 +1,5 @@
 // Don't open the browser during development
+// Any changes made here need browser reload
 process.env.BROWSER = "none";
 
 const CracoLessPlugin = require('craco-less');
