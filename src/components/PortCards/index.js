@@ -17,7 +17,6 @@ function PortCards() {
             <Cards
                 wrapperClass="card-left"
                 deployedUrl="https://lit-wildwood-97501.herokuapp.com"
-                botCard={false}
                 img={binder}
                 alt="binder app"
                 description="CRM app to track rental leads. Built with Express and Sequelize."
@@ -25,9 +24,8 @@ function PortCards() {
                 title="Bindrr"
             />
             <Cards
-                wrapperClass="card-right"
+                wrapperClass="card-bright"
                 deployedUrl="https://inhouse-tracker.herokuapp.com/"
-                botCard={false}
                 img={warehouse}
                 alt="warehouse"
                 description="Warehouse inventory tracking system. MERN Stack Application."
@@ -37,7 +35,6 @@ function PortCards() {
             <Cards
                 wrapperClass="card-bleft"
                 deployedUrl="https://rkraeher.github.io/employee-directory-react"
-                botCard={true}
                 img={directory}
                 alt="directory app"
                 description="Sortable directory built with React and Bootstrap."
@@ -45,9 +42,8 @@ function PortCards() {
                 title="Easy Directory"
             />
             <Cards
-                wrapperClass="card-bright"
+                wrapperClass="card-right"
                 deployedUrl="https://rkraeher.github.io/SuggestSoCal"
-                botCard={true}
                 img={socal}
                 alt="suggest socal"
                 description="Traveler recommendation site for Southern California."

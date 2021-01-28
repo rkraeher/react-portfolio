@@ -1,10 +1,9 @@
 import { Row, Col } from "antd";
-import "../Project/Project.css";
+import "./styles.css";
 
 function Bio() {
     return (
         <div>
-
             <Row className="heading container">
                 <Col lg={20}>
                     <h1>Developer &middot; Writer &middot; Educator</h1>

@@ -1,7 +1,6 @@
 import React from 'react';
-import "../Project/Project.css";
-import "./style.css";
-import ProfilePic from '../ProfilePic/ProfilePic';
+import "./styles.css";
+import ProfilePic from '../ProfilePic';
 
 const styles = {
     margin: "1vw"

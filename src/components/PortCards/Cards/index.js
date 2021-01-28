@@ -2,19 +2,16 @@ import "antd/dist/antd.css";
 import "../styles.css";
 import { Card } from 'antd';
 
-function Cards({ wrapperClass, deployedUrl, botCard, img, alt, description, githubUrl, title }) {
+function Cards({ wrapperClass, deployedUrl, img, alt, description, githubUrl, title }) {
     const { Meta } = Card;
     const styles = {
         img: {
             height: 360
         },
-        topCards: {
+        cards: {
             flexBasis: "auto", maxWidth: "22em",
-            minHeight: "23em", marginTop: "3em",
+            minHeight: "23em", margin: "2em",
             fontSize: "2em", textAlign: "center"
-        },
-        botCards: {
-            marginBottom: "3em",
         }
     }
     return (
@@ -23,7 +20,7 @@ function Cards({ wrapperClass, deployedUrl, botCard, img, alt, description, gith
                 <Card
                     hoverable
                     className="cards"
-                    style={botCard ? { ...styles.topCards, ...styles.botCards } : { ...styles.topCards }}
+                    style={styles.cards}
                     cover={<img alt={alt} style={styles.img} src={img} />}
                 >
                     <h1>{title}</h1>

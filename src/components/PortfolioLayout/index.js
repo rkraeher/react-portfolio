@@ -1,29 +1,29 @@
-/* eslint-disable no-lone-blocks */
 import { Layout, Menu } from 'antd';
 import { useState } from "react";
-import "./PortfolioLayout.css";
-import Project from "../Project/Project";
-import Bio from "../Bio/Bio";
+import Project from "../Project";
+import Bio from "../Bio";
 import PortCards from "../PortCards";
 import Home from "../Home";
+import "./styles.css";
 
 const { Header, Content, Footer } = Layout;
 
+//TODO: Add Moment.js to footer data for dynamic year update. 
+
 function PortfolioLayout() {
     const [currentView, setCurrentView] = useState(<Home />);
-    const [footer, setFooter] = useState("Rudi Kraeher © 2020");
+    const [footer, setFooter] = useState("Rudi Kraeher ©2021");
 
     function handleLeave(e) {
         e.target.style.background = "#284B63";
         e.target.style.color = "white";
-        setFooter("Rudi Kraeher © 2020");
+        setFooter("Rudi Kraeher ©2021");
     }
     function handleOver(e) {
         e.target.style.background = "#F0F2F5";
         e.target.style.color = "black";
         setFooter("Back to the top");
     }
-
 
     return (
         <div>

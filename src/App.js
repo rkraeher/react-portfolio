@@ -1,5 +1,5 @@
 import "./App.less";
-import PortfolioLayout from "./components/PortfolioLayout/PortfolioLayout";
+import PortfolioLayout from "./components/PortfolioLayout";
 
 function App() {
   return (
