@@ -1,107 +1,59 @@
 import React from "react"
-import "antd/dist/antd.css";
-import "./styles.css";
 import directory from "../../assets/images/directory.jpg";
 import binder from "../../assets/images/binder-stock.jpg";
 import socal from "../../assets/images/socal.jpg";
 import warehouse from "../../assets/images/warehouse.jpg";
-import { Card } from 'antd';
+import Cards from "./Cards";
+import "antd/dist/antd.css";
+import "./styles.css";
 
-
-//TODO: Everything inside the a should be a component
-
+//TODO: Abstract the card data into an imported object and map into Cards components
+//Media query for 2 col vs 1 col marginBot states https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
 
 function PortCards() {
-    const { Meta } = Card;
-    const styles = {
-        img: {
-            height: 360
-        },
-        topCards: {
-            flexBasis: "auto", maxWidth: "22em",
-            minHeight: "23em", marginTop: "3em",
-            fontSize: "2em", textAlign: "center"
-        },
-        botCards: {
-            marginBottom: "3em"
-        }
-    }
 
     return (
         <div className="card-container">
-            <div className="card-left">
-                <a target="blank_" href="https://lit-wildwood-97501.herokuapp.com">
-                    <Card
-                        hoverable
-                        className="cards"
-                        style={styles.topCards}
-                        cover={<img alt="binder app" style={styles.img} src={binder} />}
-                    >
-                        <h1>Bindrr</h1>
-                        <Meta className="card-desc"
-                            description="CRM app to track rental leads. Built with Express and Sequelize." />
-                        <a target="blank_" href="https://github.com/rkraeher/bindrr">
-                            <br></br>
-                            <i className="fab fa-github fa-4x"></i>
-                        </a>
-                    </Card>
-                </a>
-            </div>
-            <div className="card-right">
-                <a target="blank_" href="https://inhouse-tracker.herokuapp.com/">
-                    <Card
-                        hoverable
-                        className="cards"
-                        style={styles.topCards}
-                        cover={<img alt="warehouse" style={styles.img} src={warehouse} />}
-                    >
-                        <h1>inHouse</h1>
-                        <Meta className="card-desc"
-                            description="Warehouse inventory tracking system. MERN Stack Application." />
-                        <a target="blank_" href="https://github.com/Nolanws1/inHouse">
-                            <br></br>
-                            <i className="fab fa-github fa-4x"></i>
-                        </a>
-                    </Card>
-                </a>
-            </div>
-            <div className="card-bleft">
-                <a target="blank_" href="https://rkraeher.github.io/employee-directory-react">
-                    <Card
-                        hoverable
-                        className="cards"
-                        id="dir-app"
-                        style={{ ...styles.topCards, ...styles.botCards }}
-                        cover={<img alt="directory app" style={styles.img} src={directory} />}
-                    >
-                        <h1>Easy Directory</h1>
-                        <Meta className="card-desc"
-                            description="Sortable directory built with React and Bootstrap." />
-                        <a target="blank_" href="https://github.com/rkraeher/employee-directory-react">
-                            <br></br>
-                            <i className="fab fa-github fa-4x"></i>
-                        </a>
-                    </Card>
-                </a>
-            </div>
-            <div className="card-bright">
-                <a target="blank_" href="https://rkraeher.github.io/SuggestSoCal">
-                    <Card
-                        hoverable
-                        className="cards"
-                        style={{ ...styles.topCards, ...styles.botCards }}
-                        cover={<img alt="suggest socal" style={styles.img} src={socal} />}
-                    >
-                        <h1>Suggest Socal</h1>
-                        <Meta className="card-desc"
-                            description="Traveler recommendation site for Southern California." />
-                        <a target="blank_" href="https://github.com/rkraeher/SuggestSoCal">
-                            <br></br>
-                            <i className="fab fa-github fa-4x"></i>
-                        </a>
-                    </Card>
-                </a>
-            </div>
+            <Cards
+                wrapperClass="card-left"
+                deployedUrl="https://lit-wildwood-97501.herokuapp.com"
+                botCard={false}
+                img={binder}
+                alt="binder app"
+                description="CRM app to track rental leads. Built with Express and Sequelize."
+                githubUrl="https://github.com/rkraeher/bindrr"
+                title="Bindrr"
+            />
+            <Cards
+                wrapperClass="card-right"
+                deployedUrl="https://inhouse-tracker.herokuapp.com/"
+                botCard={false}
+                img={warehouse}
+                alt="warehouse"
+                description="Warehouse inventory tracking system. MERN Stack Application."
+                githubUrl="https://github.com/Nolanws1/inHouse"
+                title="inHouse"
+            />
+            <Cards
+                wrapperClass="card-bleft"
+                deployedUrl="https://rkraeher.github.io/employee-directory-react"
+                botCard={true}
+                img={directory}
+                alt="directory app"
+                description="Sortable directory built with React and Bootstrap."
+                githubUrl="https://github.com/rkraeher/employee-directory-react"
+                title="Easy Directory"
+            />
+            <Cards
+                wrapperClass="card-bright"
+                deployedUrl="https://rkraeher.github.io/SuggestSoCal"
+                botCard={true}
+                img={socal}
+                alt="suggest socal"
+                description="Traveler recommendation site for Southern California."
+                githubUrl="https://github.com/rkraeher/SuggestSoCal"
+                title="Suggest Socal"
+            />
         </div >
     );
 }
