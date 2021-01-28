@@ -10,7 +10,7 @@ function Cards({ wrapperClass, deployedUrl, img, alt, description, githubUrl, ti
         },
         cards: {
             flexBasis: "auto", maxWidth: "22em",
-            minHeight: "23em", margin: "2em",
+            minHeight: "15em", margin: "2em",
             fontSize: "2em", textAlign: "center"
         }
     }
@@ -21,7 +21,7 @@ function Cards({ wrapperClass, deployedUrl, img, alt, description, githubUrl, ti
                     hoverable
                     className="cards"
                     style={styles.cards}
-                    cover={<img alt={alt} style={styles.img} src={img} />}
+                    cover={<img alt={alt} className="img" style={styles.img} src={img} />}
                 >
                     <h1>{title}</h1>
                     <Meta className="card-desc"
