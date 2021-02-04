@@ -30,3 +30,21 @@ body {
   text-align: center;
   color: white; 
 }
+
+@media only screen and (max-width: 1007px){
+  .bio {
+    font-size: 1.5em;
+  }
+  .heading h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .bio {
+    font-size: 1em;
+  }
+  .heading h1 {
+    font-size: 1.5em;
+  }
+}
