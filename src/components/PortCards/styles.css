@@ -63,10 +63,13 @@ h1 {
 }
 
 @media only screen and (max-width: 640px) {
+  .card-container {
+    font-size: 0.5em !important;
+  }
   .cards{
     margin: 1em !important;
   }
   .img {
-    display: none;
+    height: 15em !important;
   }
 }
