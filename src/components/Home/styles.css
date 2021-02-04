@@ -61,6 +61,10 @@
     .icons {
         font-size: 1em;
     }
+
+    #languages {
+        display: none;
+    }
     
     .pic {
         height: 20em;
