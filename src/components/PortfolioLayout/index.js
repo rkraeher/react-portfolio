@@ -4,6 +4,11 @@ import Project from "../Project";
 import Bio from "../Bio";
 import PortCards from "../PortCards";
 import Home from "../Home";
+import { TiHome } from "react-icons/ti";
+import { FaUserAlt } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
+import { BsFillBriefcaseFill } from "react-icons/bs";
+import { AiFillPhone } from "react-icons/ai";
 import "./styles.css";
 
 const { Header, Content, Footer } = Layout;
@@ -30,20 +35,44 @@ function PortfolioLayout() {
             <Layout className="layout">
                 <Header className="header" style={{ backgroundColor: "#284B63" }}>
                     <Menu theme="dark" mode="horizontal" style={{ backgroundColor: "#284B63", fontSize: 25 }}>
-                        <Menu.Item key="1" className="menu-item" style={{ color: "white" }}
-                            onClick={() => setCurrentView(<Bio />)}>Bio</Menu.Item>
-                        <Menu.Item key="2" className="menu-item" style={{ color: "white" }}
-                            onClick={() => setCurrentView(<PortCards />)}>Projects</Menu.Item>
-                        <Menu.Item key="3" className="menu-item" style={{ color: "white" }}
-                            onClick={() => setCurrentView(<Home />)}>Contact</Menu.Item>
-                        <Menu.Item key="4">
+                        <Menu.Item
+                            key="1"
+                            className="menu-item"
+                            style={{ color: "white" }}
+                            onClick={() => setCurrentView(<Bio />)}>
+                            <span className="menu-icon"><FaUserAlt /></span>
+                            <p className="menu-text">Bio</p>
+                        </Menu.Item>
+                        <Menu.Item
+                            key="2"
+                            className="menu-item"
+                            style={{ color: "white" }}
+                            onClick={() => setCurrentView(<PortCards />)}>
+                            <span className="menu-icon"><BsFillBriefcaseFill /></span>
+                            <p className="menu-text">Projects</p>
+                        </Menu.Item>
+                        <Menu.Item key="3">
                             <a className="menu-item" style={{ color: "white" }} target="blank_"
                                 href="https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharing">
-                                Resume
+                                <span className="menu-icon"><IoDocumentText /></span>
+                                <p className="menu-text">Resume</p>
                             </a>
                         </Menu.Item>
-                        <Menu.Item key="5" id="home" style={{ float: "right", color: "white" }}
-                            onClick={() => setCurrentView(<Home />)}>Rudi Kraeher</Menu.Item>
+                        <Menu.Item
+                            key="4"
+                            className="menu-item"
+                            style={{ color: "white" }}
+                            onClick={() => setCurrentView(<Home />)}>
+                            <span><AiFillPhone className="menu-icon" /></span>
+                            <p className="menu-text">Contact</p>
+                        </Menu.Item>
+                        <Menu.Item
+                            key="5"
+                            style={{ float: "right", color: "white" }}
+                            onClick={() => setCurrentView(<Home />)}>
+                            <span className="menu-icon"><TiHome /></span>
+                            <p className="menu-text">Rudi Kraeher</p>
+                        </Menu.Item>
                     </Menu>
                 </Header>
                 <Content className="content">

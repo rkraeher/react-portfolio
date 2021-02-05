@@ -6,13 +6,39 @@
   background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media only screen and (max-width: 640px) {
-  #home {
-    display: none;
+.menu-icon {
+  display:none;
+}
+
+.menu-text {
+  display: inline;
+}
+
+@media only screen and (max-width: 740px) {
+  .ant-menu-item {
+    padding-right: 0 !important;
   }
-  /* Change these to icons */
+}
+
+@media only screen and (max-width: 640px) { 
+  .ant-menu {
+  margin: -5px 0 0 -10px !important;
+  }
+
+  .ant-menu-item {
+    padding-right: 5px !important;
+  }
+  
+  .menu-icon{
+    display: inline !important;
+  }
+
   .menu-item {
     font-size: 0.75em;
+  }
+
+  .menu-text {
+    display: none;
   }
 
   .site-layout-content {
