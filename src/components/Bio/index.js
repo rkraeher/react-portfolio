@@ -1,6 +1,17 @@
 import { Row, Col } from "antd";
 import "./styles.css";
 
+const styles = {
+    link: {
+        color: "black",
+        fontWeight: "bold"
+    },
+    skills: {
+        fontWeight: "500",
+        fontSize: "1.25em",
+    }
+};
+
 function Bio() {
     return (
         <div>
@@ -8,33 +19,40 @@ function Bio() {
                 <Col lg={20}>
                     <h1>Developer &middot; Writer &middot; Educator</h1>
                     <div className="bio">
-                        <p> I am a Full Stack Web Developer specializing in React with a background in media and cultural studies.
-                        I create modern web applications for logistics, education, scholarly research, and customer relationship management.
+                        <p> I am a Visual Media Scholar turned Full Stack Developer. While writing a doctoral dissertation on experimental
+                        American aesthetics I completed a web development certificate at the University of California, Riverside.
+                        I’m a creative problem solver, rabid mat&eacute; drinker, and undeterred bug sleuth.
                         </p>
 
                         <p>
-                            I'm currently completing a PhD in English at the University of California, Riverside. My
-                            dissertation project, "Smoke and Mirrors: Queer of Color Aesthetics from the Harlem Renaissance
-                            to the Present" is an analysis of experimental American artists intervening in discourses of aesthetic form and
-                            embodied difference. </p>
-
-                        <p>My writing on contemporary art has been published on
+                            My dissertation project, "Smoke and Mirrors: Queer of Color Aesthetics from the Harlem Renaissance
+                            to the Present" intervenes in discourses of aesthetic form and embodied difference.
+                            My writing on contemporary art has been published on
                             <a href="https://www.kcet.org/shows/artbound/soldadera-memory-machine"
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ color: "black", fontWeight: "bold" }}> KCET's Artbound
-                            </a> and in the catalogue for the landmark 2017 art exhibition,
+                                style={styles.link}> KCET's Artbound
+                            </a> and in the catalogue for the landmark 2017, Pacific Standard Time art exhibition,
                             <a href="https://www.artbook.com/9780982304686.html"
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ color: "black", fontWeight: "bold" }}> Mundos Alternos.
+                                style={styles.link}> Mundos Alternos: Art and Science Fiction in the Americas.
                             </a>
                         </p>
                         <p>
-                            My experience in teaching and research has served me well as a developer,
-                            especially when learning new skills and technologies.
+                            I am fascinated by the process of using my knowledge and skills to make things that people will
+                            find helpful and interesting. I grew up in a family that built small businesses from scratch,
+                            so I can appreciate the entrepreneurial spirit and the importance of self-motivation, especially
+                            in approaching complex, long-term projects.
                          </p>
+                        <br></br>
+                        <hr></hr>
+                        <br></br>
+                        <p style={styles.skills}>
+                            React, JavaScript, HTML, CSS, MERN Stack, Node, Express, MongoDB, MySQL.
+                        </p>
                     </div>
+
                 </Col>
             </Row>
         </div >
