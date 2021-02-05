@@ -10,8 +10,12 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="text">
-                <h1 id="name">Rudi Kraeher</h1>
-                <h2>Full Stack Web Developer</h2>
+                <h1 id="name">
+                    Rudi Kraeher
+                <br></br>
+                    Full Stack Web Developer
+                </h1>
+
                 <h3 id="languages">HTML/CSS &middot; JavaScript &middot; React &middot; Node</h3>
 
                 <div className="icons">
