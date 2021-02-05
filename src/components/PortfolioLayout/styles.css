@@ -29,6 +29,10 @@
     padding-right: 5px !important;
   }
   
+  .ant-menu-item-selected {
+    background-color: #284B63 !important;
+  }
+
   .menu-icon{
     display: inline !important;
   }

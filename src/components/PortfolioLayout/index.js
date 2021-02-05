@@ -12,6 +12,27 @@ import { AiFillPhone } from "react-icons/ai";
 import "./styles.css";
 
 const { Header, Content, Footer } = Layout;
+const styles = {
+    header: {
+        backgroundColor: "#284B63",
+        fontSize: 25
+    },
+    menuItem: {
+        color: "white"
+    },
+    menuItemFloat: {
+        color: "white",
+        float: "right"
+    },
+    footer: {
+        textAlign: 'center',
+        fontSize: 30,
+        backgroundColor: "#284B63",
+        color: "white",
+        transition: '0.3s'
+    }
+};
+
 
 //TODO: Add Moment.js to footer data for dynamic year update. 
 
@@ -33,12 +54,12 @@ function PortfolioLayout() {
     return (
         <div>
             <Layout className="layout">
-                <Header className="header" style={{ backgroundColor: "#284B63" }}>
-                    <Menu theme="dark" mode="horizontal" style={{ backgroundColor: "#284B63", fontSize: 25 }}>
+                <Header className="header" style={styles.header}>
+                    <Menu theme="dark" mode="horizontal" style={styles.header}>
                         <Menu.Item
                             key="1"
                             className="menu-item"
-                            style={{ color: "white" }}
+                            style={styles.menuItem}
                             onClick={() => setCurrentView(<Bio />)}>
                             <span className="menu-icon"><FaUserAlt /></span>
                             <p className="menu-text">Bio</p>
@@ -46,13 +67,13 @@ function PortfolioLayout() {
                         <Menu.Item
                             key="2"
                             className="menu-item"
-                            style={{ color: "white" }}
+                            style={styles.menuItem}
                             onClick={() => setCurrentView(<PortCards />)}>
                             <span className="menu-icon"><BsFillBriefcaseFill /></span>
                             <p className="menu-text">Projects</p>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <a className="menu-item" style={{ color: "white" }} target="blank_"
+                            <a className="menu-item" style={styles.menuItem} target="blank_"
                                 href="https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharing">
                                 <span className="menu-icon"><IoDocumentText /></span>
                                 <p className="menu-text">Resume</p>
@@ -61,14 +82,15 @@ function PortfolioLayout() {
                         <Menu.Item
                             key="4"
                             className="menu-item"
-                            style={{ color: "white" }}
+                            style={styles.menuItem}
+                            //TODO: Make this link to a Contact Form component
                             onClick={() => setCurrentView(<Home />)}>
                             <span><AiFillPhone className="menu-icon" /></span>
                             <p className="menu-text">Contact</p>
                         </Menu.Item>
                         <Menu.Item
                             key="5"
-                            style={{ float: "right", color: "white" }}
+                            style={styles.menuItemFloat}
                             onClick={() => setCurrentView(<Home />)}>
                             <span className="menu-icon"><TiHome /></span>
                             <p className="menu-text">Rudi Kraeher</p>
@@ -80,7 +102,7 @@ function PortfolioLayout() {
                         <Project currentView={currentView} />
                     </div>
                 </Content>
-                <Footer style={{ textAlign: 'center', fontSize: 30, backgroundColor: "#284B63", color: "white", transition: '0.3s' }}
+                <Footer style={styles.footer}
                     onMouseOver={handleOver}
                     onMouseLeave={handleLeave}
                     onClick={() => window.scrollTo(0, 0)}>
