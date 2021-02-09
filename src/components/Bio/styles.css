@@ -3,19 +3,21 @@ body {
   }
   
 .bio {
-    color:white;
+    color:#284B63;
     font-size: 2em;
   }
 
 .container {
+  background-color: #ececec;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .heading h1 {
     font-size: 3.25em;
     text-align: center;
-    color: white; 
+    color: #284B63; 
   }
 
 .heading h2 {
@@ -43,7 +45,6 @@ body {
 @media only screen and (max-width: 640px){
   .bio {
     font-size: 1.15em;  
-    /*previously 1em*/
   }
   .heading h1 {
     font-size: 1.5em;

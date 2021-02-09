@@ -1,4 +1,4 @@
-import { Layout, Menu } from 'antd';
+import { Layout, Menu } from "antd";
 import { useState } from "react";
 import Project from "../Project";
 import Bio from "../Bio";
@@ -25,11 +25,11 @@ const styles = {
         float: "right"
     },
     footer: {
-        textAlign: 'center',
-        fontSize: 30,
+        textAlign: "center",
+        fontSize: 18,
         backgroundColor: "#284B63",
         color: "white",
-        transition: '0.3s'
+        transition: "0.3s"
     }
 };
 

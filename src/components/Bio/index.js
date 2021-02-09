@@ -3,12 +3,12 @@ import "./styles.css";
 
 const styles = {
     link: {
-        color: "black",
+        color: "#284B63",
         fontWeight: "bold"
     },
     skills: {
         fontWeight: "500",
-        fontSize: "1.25em",
+        fontSize: "1.15em",
     }
 };
 
@@ -40,16 +40,13 @@ function Bio() {
                             </a>
                         </p>
                         <p>
-                            I am fascinated by the process of using my knowledge and skills to make things that people will
-                            find helpful and interesting. I grew up in a family that built small businesses from scratch,
-                            so I can appreciate the entrepreneurial spirit and the importance of self-motivation, especially
-                            in approaching complex, long-term projects.
+                            I enjoy building things that people find helpful and interesting. I grew up in a family
+                            that built small businesses from scratch, so I can appreciate the entrepreneurial spirit
+                            and the importance of self-motivation, especially in approaching complex, long-term projects.
                          </p>
-                        <br></br>
                         <hr></hr>
-                        <br></br>
                         <p style={styles.skills}>
-                            React, JavaScript, HTML, CSS, MERN Stack, Node, Express, MongoDB, MySQL.
+                            Technical Skills - React, JavaScript, HTML, CSS, MERN Stack, Node, Express, MongoDB, MySQL.
                         </p>
                     </div>
 
