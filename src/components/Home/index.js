@@ -1,5 +1,6 @@
 import "./styles.css";
 import ProfilePic from "../ProfilePic";
+import { Link } from "react-router-dom";
 
 const styles = {
     margin: "1vw"
@@ -25,10 +26,11 @@ const Home = () => {
                     <a target="blank_" href="https://github.com/rkraeher">
                         <i className="fab fa-github fa-3x" style={styles}></i>
                     </a>
-                    {/*//TODO: Should switch current view to Contact page */}
-                    <a href="/react-portfolio/contact">
-                        <i className="fas fa-envelope fa-3x" style={styles}></i>
-                    </a>
+                    <Link to="/react-portfolio/contact">
+                        <a href="#">
+                            <i className="fas fa-envelope fa-3x" style={styles}></i>
+                        </a>
+                    </Link>
                 </div>
             </div>
             <div className="image">
