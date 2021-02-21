@@ -17,6 +17,8 @@ module.exports = {
                             '@body-background': '#284B63',
                             '@text-color': 'white',
                             '@input-color': 'black',
+                            '@form-item-label-font-size': '1.15em',
+                            '@label-color': 'black',
                         },
                         javascriptEnabled: true,
                     },

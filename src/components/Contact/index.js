@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import { Form, Input, Button, message } from "antd";
+import { Form, Input, Button, Row, Col, message } from "antd";
 import "./styles.css";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -7,13 +7,12 @@ const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_USER_ID;
 
 const layout = {
-    labelCol: {
-        span: 8,
-    },
     wrapperCol: {
-        span: 16,
-    },
+        span: 24,
+    }
 };
+
+//TODO: Add captcha - google integrates w/emailJS
 
 export default function Contact() {
     const [form] = Form.useForm();
@@ -26,7 +25,7 @@ export default function Contact() {
             }, (error) => {
                 console.log(error.text);
             })
-            .finally(() => {
+            .then(() => {
                 form.resetFields();
             })
     };
@@ -39,42 +38,51 @@ export default function Contact() {
     }
 
     return (
-        <Form {...layout} form={form} onFinish={onFinish} >
-            <Form.Item name="from_name" label="Name" rules={[
-                {
-                    required: true,
-                    message: "Please enter your name."
-                }
-            ]}>
-                <Input />
-            </Form.Item>
-            <Form.Item name="from_email" label="Email" rules={[
-                {
-                    required: true,
-                    message: "Please enter your email."
-                },
-                {
-                    type: 'email',
-                    message: "Please enter a valid email."
-                }
-            ]}>
+        <Row className="form">
+            <Col lg={12} md={14} sm={16}>
+                <div>
+                    <h1 className="contact-heading">
+                        Contact Me
+                    </h1>
+                </div>
+                <Form {...layout} form={form} onFinish={onFinish} >
+                    <Form.Item name="from_name" rules={[
+                        {
+                            required: true,
+                            message: "Please enter your name."
+                        }
+                    ]}>
+                        <Input placeholder="Name" />
+                    </Form.Item>
+                    <Form.Item name="from_email" rules={[
+                        {
+                            required: true,
+                            message: "Please enter your email."
+                        },
+                        {
+                            type: 'email',
+                            message: "Please enter a valid email."
+                        }
+                    ]}>
 
-                <Input />
-            </Form.Item>
-            <Form.Item name="message" label="Message" rules={[
-                {
-                    required: true,
-                    message: "Please include a message."
-                }
-            ]}>
-                <Input.TextArea />
-            </Form.Item>
+                        <Input placeholder="Email" />
+                    </Form.Item>
+                    <Form.Item name="message" rules={[
+                        {
+                            required: true,
+                            message: "Please include a message."
+                        }
+                    ]}>
+                        <Input.TextArea placeholder="Message" />
+                    </Form.Item>
 
-            <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-                <Button type="primary" htmlType="submit">
-                    Submit
+                    <Form.Item wrapperCol={{ ...layout.wrapperCol }}>
+                        <Button type="primary" htmlType="submit">
+                            Submit
                 </Button>
-            </Form.Item>
-        </Form>
+                    </Form.Item>
+                </Form>
+            </Col>
+        </Row>
     );
 }
