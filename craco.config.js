@@ -15,7 +15,8 @@ module.exports = {
                             '@primary-color': '#3c6e71',
                             '@heading-color': 'white',
                             '@body-background': '#284B63',
-                            '@text-color': 'white'
+                            '@text-color': 'white',
+                            '@input-color': 'black',
                         },
                         javascriptEnabled: true,
                     },

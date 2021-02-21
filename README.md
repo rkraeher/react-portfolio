@@ -14,7 +14,7 @@
 Visit my portfolio here: https://rkraeher.github.io/react-portfolio/
 
 ## Technologies
-React.js, Ant Design, Font Awesome
+Ant Design, EmailJS, Font Awesome, Less, React.js
 
 ## Demo
 ![Screenshot of deployed app](./src/assets/images/screenshot.png)  

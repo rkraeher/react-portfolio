@@ -25,6 +25,7 @@ const Home = () => {
                     <a target="blank_" href="https://github.com/rkraeher">
                         <i className="fab fa-github fa-3x" style={styles}></i>
                     </a>
+                    {/*//TODO: Should switch current view to Contact page */}
                     <a href="mailto: rudikraeher@gmail.com">
                         <i className="fas fa-envelope fa-3x" style={styles}></i>
                     </a>

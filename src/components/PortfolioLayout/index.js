@@ -1,5 +1,6 @@
 import { Layout, Menu } from "antd";
 import { useState } from "react";
+import Contact from "../Contact";
 import Project from "../Project";
 import Bio from "../Bio";
 import PortCards from "../PortCards";
@@ -83,8 +84,7 @@ function PortfolioLayout() {
                             key="4"
                             className="menu-item"
                             style={styles.menuItem}
-                            //TODO: Make this link to a Contact Form component
-                            onClick={() => setCurrentView(<Home />)}>
+                            onClick={() => setCurrentView(<Contact />)}>
                             <span><AiFillPhone className="menu-icon" /></span>
                             <p className="menu-text">Contact</p>
                         </Menu.Item>
