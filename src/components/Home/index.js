@@ -26,7 +26,7 @@ const Home = () => {
                         <i className="fab fa-github fa-3x" style={styles}></i>
                     </a>
                     {/*//TODO: Should switch current view to Contact page */}
-                    <a href="/contact">
+                    <a href="/react-portfolio/contact">
                         <i className="fas fa-envelope fa-3x" style={styles}></i>
                     </a>
                 </div>

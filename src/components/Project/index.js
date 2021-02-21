@@ -8,10 +8,10 @@ function Project() {
     return (
         <div>
             <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/bio" exact component={Bio} />
-                <Route path="/projects" exact component={Projects} />
-                <Route path="/contact" exact component={Contact} />
+                <Route path="/react-portfolio/" exact component={Home} />
+                <Route path="/react-portfolio/bio" exact component={Bio} />
+                <Route path="/react-portfolio/projects" exact component={Projects} />
+                <Route path="/react-portfolio/contact" exact component={Contact} />
             </Switch>
         </div>
     );
