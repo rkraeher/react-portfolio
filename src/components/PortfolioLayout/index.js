@@ -1,10 +1,7 @@
 import { Layout, Menu } from "antd";
 import { useState } from "react";
-import Contact from "../Contact";
 import Project from "../Project";
-import Bio from "../Bio";
-import PortCards from "../PortCards";
-import Home from "../Home";
+import { Link } from "react-router-dom";
 import { TiHome } from "react-icons/ti";
 import { FaUserAlt } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
@@ -38,7 +35,6 @@ const styles = {
 //TODO: Add Moment.js to footer data for dynamic year update. 
 
 function PortfolioLayout() {
-    const [currentView, setCurrentView] = useState(<Home />);
     const [footer, setFooter] = useState("Rudi Kraeher ©2021");
 
     function handleLeave(e) {
@@ -57,21 +53,17 @@ function PortfolioLayout() {
             <Layout className="layout">
                 <Header className="header" style={styles.header}>
                     <Menu theme="dark" mode="horizontal" style={styles.header}>
-                        <Menu.Item
-                            key="1"
-                            className="menu-item"
-                            style={styles.menuItem}
-                            onClick={() => setCurrentView(<Bio />)}>
-                            <span className="menu-icon"><FaUserAlt /></span>
-                            <p className="menu-text">Bio</p>
+                        <Menu.Item key="1" className="menu-item">
+                            <Link to="/bio" style={styles.menuItem}>
+                                <span className="menu-icon"><FaUserAlt /></span>
+                                <p className="menu-text">Bio</p>
+                            </Link>
                         </Menu.Item>
-                        <Menu.Item
-                            key="2"
-                            className="menu-item"
-                            style={styles.menuItem}
-                            onClick={() => setCurrentView(<PortCards />)}>
-                            <span className="menu-icon"><BsFillBriefcaseFill /></span>
-                            <p className="menu-text">Projects</p>
+                        <Menu.Item key="2" className="menu-item">
+                            <Link to="/projects" style={styles.menuItem}>
+                                <span className="menu-icon"><BsFillBriefcaseFill /></span>
+                                <p className="menu-text">Projects</p>
+                            </Link>
                         </Menu.Item>
                         <Menu.Item key="3">
                             <a className="menu-item" style={styles.menuItem} target="blank_"
@@ -80,26 +72,24 @@ function PortfolioLayout() {
                                 <p className="menu-text">Resume</p>
                             </a>
                         </Menu.Item>
-                        <Menu.Item
-                            key="4"
-                            className="menu-item"
-                            style={styles.menuItem}
-                            onClick={() => setCurrentView(<Contact />)}>
-                            <span><AiFillPhone className="menu-icon" /></span>
-                            <p className="menu-text">Contact</p>
+                        <Menu.Item key="4" className="menu-item">
+                            <Link to="/contact" style={styles.menuItem}>
+                                <span><AiFillPhone className="menu-icon" /></span>
+                                <p className="menu-text">Contact</p>
+                            </Link>
                         </Menu.Item>
-                        <Menu.Item
-                            key="5"
-                            style={styles.menuItemFloat}
-                            onClick={() => setCurrentView(<Home />)}>
-                            <span className="menu-icon"><TiHome /></span>
-                            <p className="menu-text">Rudi Kraeher</p>
+                        <Menu.Item key="5" style={styles.menuItemFloat}>
+                            <Link to="/" style={styles.menuItem}>
+                                <span className="menu-icon"><TiHome /></span>
+                                <p className="menu-text">Rudi Kraeher</p>
+                            </Link>
                         </Menu.Item>
+
                     </Menu>
                 </Header>
                 <Content className="content">
                     <div className="site-layout-content">
-                        <Project currentView={currentView} />
+                        <Project />
                     </div>
                 </Content>
                 <Footer style={styles.footer}

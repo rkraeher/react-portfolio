@@ -1,6 +1,5 @@
-import React from 'react';
 import "./styles.css";
-import ProfilePic from '../ProfilePic';
+import ProfilePic from "../ProfilePic";
 
 const styles = {
     margin: "1vw"
@@ -18,6 +17,7 @@ const Home = () => {
 
                 <h3 id="languages">HTML/CSS &middot; JavaScript &middot; React &middot; Node</h3>
 
+
                 <div className="icons">
                     <a target="blank_" href="https://www.linkedin.com/in/rudi-kraeher">
                         <i className="fab fa-linkedin fa-3x" style={styles}></i>
@@ -26,7 +26,7 @@ const Home = () => {
                         <i className="fab fa-github fa-3x" style={styles}></i>
                     </a>
                     {/*//TODO: Should switch current view to Contact page */}
-                    <a href="mailto: rudikraeher@gmail.com">
+                    <a href="/contact">
                         <i className="fas fa-envelope fa-3x" style={styles}></i>
                     </a>
                 </div>

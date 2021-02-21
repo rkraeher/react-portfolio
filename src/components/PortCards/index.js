@@ -9,6 +9,7 @@ import "./styles.css";
 
 //TODO: Abstract the card data into an imported object and map into Cards components
 //Media query for 2 col vs 1 col marginBot states https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
+//Margins between content area and header are not consistent with other pages. 
 
 function PortCards() {
 
