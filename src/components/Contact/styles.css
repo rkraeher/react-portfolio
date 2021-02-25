@@ -1,8 +1,15 @@
+.contact-details {
+    text-align: center;
+    color:#284B63;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
 .contact-heading {
     text-align: center;
     color:#284B63;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form {
