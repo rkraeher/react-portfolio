@@ -45,7 +45,6 @@ export default function Contact() {
                         Contact Me
                     </h1>
                     <p className="contact-details">If you have any questions or opportunities to discuss don't hesitate to reach out!</p>
-                    {/* //TODO: Add some smaller, more personable text */}
                 </div>
                 <Form {...layout} form={form} onFinish={onFinish} >
                     <Form.Item name="from_name" rules={[

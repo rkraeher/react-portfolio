@@ -41,13 +41,18 @@ h1 {
   margin: 5px;
 }
 
+.project-icon{
+  font-size: 3em;
+  margin: 25px 25px;
+}
+
 .site-card-wrapper {
   padding: 30px;
   background: #ececec;
   margin: 3em;
 }
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 1025px) {
   .card-container{
     grid-template-columns: 100%;
     padding-bottom: 0.75em;

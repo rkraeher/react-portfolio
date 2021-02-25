@@ -1,6 +1,8 @@
 import "antd/dist/antd.css";
 import "../styles.css";
-import { Card } from 'antd';
+import { Card } from "antd";
+import { FiExternalLink } from "react-icons/fi";
+import { FaGithubSquare } from "react-icons/fa";
 
 function Cards({ wrapperClass, deployedUrl, img, alt, description, githubUrl, title }) {
     const { Meta } = Card;
@@ -16,22 +18,24 @@ function Cards({ wrapperClass, deployedUrl, img, alt, description, githubUrl, ti
     }
     return (
         <div className={wrapperClass}>
-            <a target="blank_" href={deployedUrl}>
-                <Card
-                    hoverable
-                    className="cards"
-                    style={styles.cards}
-                    cover={<img alt={alt} className="img" style={styles.img} src={img} />}
-                >
-                    <h1>{title}</h1>
-                    <Meta className="card-desc"
-                        description={description} />
-                    <a target="blank_" href={githubUrl}>
-                        <br></br>
-                        <i className="fab fa-github fa-4x"></i>
-                    </a>
-                </Card>
-            </a>
+            <Card
+                hoverable
+                className="cards"
+                style={styles.cards}
+                cover={<img alt={alt} className="img" style={styles.img} src={img} />}
+            >
+                <h1>{title}</h1>
+                <Meta className="card-desc"
+                    description={description} />
+                <a target="_blank" rel="noreferrer" href={githubUrl}>
+                    <FaGithubSquare className="project-icon" />
+                </a>
+                <a target="_blank" rel="noreferrer" href={deployedUrl}>
+                    <FiExternalLink className="project-icon" />
+                </a>
+
+            </Card>
+
         </div>
     );
 }

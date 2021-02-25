@@ -18,7 +18,7 @@ function PortCards() {
     return (
         <div className="card-container">
             <Cards
-                wrapperClass="card-left"
+                wrapperClass="card-bright"
                 deployedUrl="https://lit-wildwood-97501.herokuapp.com"
                 img={binder}
                 alt="binder app"
@@ -27,7 +27,7 @@ function PortCards() {
                 title="Bindrr"
             />
             <Cards
-                wrapperClass="card-bright"
+                wrapperClass="card-left"
                 deployedUrl="https://inhouse-tracker.herokuapp.com/"
                 img={warehouse}
                 alt="warehouse"
