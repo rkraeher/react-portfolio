@@ -26,7 +26,7 @@ const Home = () => {
                     <a target="blank_" href="https://github.com/rkraeher">
                         <i className="fab fa-github fa-3x" style={styles}></i>
                     </a>
-                    <Link to="/react-portfolio/contact">
+                    <Link to="/contact">
                         <i className="fas fa-envelope fa-3x" style={styles}></i>
                     </Link>
                 </div>
