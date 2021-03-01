@@ -35,21 +35,23 @@ function PortfolioLayout() {
         <div>
             <Layout className="layout">
                 <NavHeader />
+
                 <Content className="content">
                     <div className="site-layout-content">
                         <Project />
                     </div>
                 </Content>
+
                 <Footer style={styles.footer}
                     onMouseOver={handleOver}
                     onMouseLeave={handleLeave}
                     onClick={() => window.scrollTo(0, 0)}>
                     {footer}
                 </Footer>
+
             </Layout>
         </div>
     );
 }
-
 export default PortfolioLayout;
 
