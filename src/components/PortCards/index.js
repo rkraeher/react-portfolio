@@ -7,7 +7,7 @@ import Cards from "./Cards";
 import "antd/dist/antd.css";
 import "./styles.css";
 
-//TODO: Abstract the card data into an imported object and map into Cards components
+//TODO: fix wrapperClass/template area issue
 
 //Media query for 2 col vs 1 col marginBot states 
 //https://stackoverflow.com/questions/44480053/how-to-detect-if-screen-size-has-changed-to-mobile-in-react
