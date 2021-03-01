@@ -12,6 +12,7 @@ function Project() {
                 <Route path="/bio" exact component={Bio} />
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/contact" exact component={Contact} />
+                {/* Add a not found component */}
             </Switch>
         </div>
     );

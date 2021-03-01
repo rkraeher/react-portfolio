@@ -1,36 +1,26 @@
-//import * as FaIcons from "react-icons/fa";
-import { useState } from "react";
-import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
-import { MailOutlined } from '@ant-design/icons';
-import './styles.css';
+import { slide as SideMenu } from "react-burger-menu";
+import { Link } from "react-router-dom";
+import NavSideItems from "./NavSideItems";
+import "./styles.css";
+import "../PortfolioLayout/styles.css";
 
-const { SubMenu } = Menu;
+//Todo: Fix this for the external "resume" link
+//https://stackoverflow.com/questions/42914666/react-router-external-link
+//Todo: Add icons?
 
-export default function NavSide() {
-    const [current, setCurrent] = useState("1");
-    //const [inlineCollapsed, setInlineCollapsed] = useState(false)
-    function handleClick(e) {
-        //setInlineCollapsed(!inlineCollapsed);
-        setCurrent(e.key);
-    };
+function NavSide() {
     return (
-        <>
-            <Menu
-                onClick={handleClick}
-                style={{ width: 256, backgroundColor: "black" }}
-                //defaultOpenKeys={['sub1']}
-                //inlineCollapsed={true}
-                selectedKeys={current}
-                mode="inline"
-            >
-                <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
-                    <Menu.Item key="1">Option 1</Menu.Item>
-                    <Menu.Item key="2">Option 2</Menu.Item>
-                    <Menu.Item key="3">Option 3</Menu.Item>
-                    <Menu.Item key="4">Option 4</Menu.Item>
-                </SubMenu>
-            </Menu>
-        </>
+        <div>
+            <SideMenu right>
+                {
+                    NavSideItems.map(item => (
+                        <Link to={item.route} key={item.id} id={item.id} className="menu-item" style={{ color: "white" }}>
+                            {item.name}
+                        </Link>
+                    ))
+                }
+            </SideMenu>
+        </div>
     );
 }
+export default NavSide;

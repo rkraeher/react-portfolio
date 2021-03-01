@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import { useState } from "react";
 import Project from "../Project";
 import NavHeader from "../NavHeader";
-
 import "./styles.css";
 
 const { Content, Footer } = Layout;
@@ -15,7 +14,6 @@ const styles = {
         transition: "0.3s"
     }
 };
-
 
 //TODO: Add Moment.js to footer data for dynamic year update. 
 
