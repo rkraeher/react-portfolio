@@ -12,8 +12,6 @@ const styles = {
     }
 };
 
-//Todo: Decrease font size and increase margins
-
 function Bio() {
     return (
         <div>

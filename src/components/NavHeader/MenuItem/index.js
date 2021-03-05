@@ -7,7 +7,7 @@ const MenuItem = [
     {
         key: "2",
         route: "/bio",
-        name: "Bio"
+        name: "About"
     },
     {
         key: "3",
