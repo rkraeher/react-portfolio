@@ -4,8 +4,6 @@ import NavSideItems from "./NavSideItems";
 import "./styles.css";
 import "../PortfolioLayout/styles.css";
 
-//Todo: Fix this for the external "resume" link
-//https://stackoverflow.com/questions/42914666/react-router-external-link
 //Todo: Add icons?
 
 function NavSide() {
@@ -19,6 +17,12 @@ function NavSide() {
                         </Link>
                     ))
                 }
+                <Link to={{ pathname: "https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharings" }}
+                    target="_blank"
+                    className="menu-item"
+                    style={{ color: "white" }}>
+                    Resume
+                </Link>
             </SideMenu>
         </div>
     );

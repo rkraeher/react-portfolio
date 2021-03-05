@@ -10,10 +10,9 @@ function Project() {
         <div>
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/bio" exact component={Bio} />
+                <Route path="/about" exact component={Bio} />
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/contact" exact component={Contact} />
-                {/* Test this*/}
                 <Route component={NotFound} />
             </Switch>
         </div>
