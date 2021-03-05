@@ -29,7 +29,7 @@ function Bio() {
                         <p>
                             My dissertation project, "Smoke and Mirrors: Queer of Color Aesthetics from the Harlem Renaissance
                             to the Present" intervenes in discourses of aesthetic form and embodied difference.
-                            My writing on contemporary art has been published on
+                            My writing on contemporary art has been published in
                             <a href="https://www.kcet.org/shows/artbound/soldadera-memory-machine"
                                 target="_blank"
                                 rel="noreferrer"
