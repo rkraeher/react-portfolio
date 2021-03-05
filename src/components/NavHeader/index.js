@@ -1,9 +1,5 @@
 import { Menu, Layout } from "antd";
 import { Link } from "react-router-dom";
-import { FaUserAlt } from "react-icons/fa";
-import { IoDocumentText } from "react-icons/io5";
-import { BsFillBriefcaseFill } from "react-icons/bs";
-import { AiFillPhone } from "react-icons/ai";
 import MenuItem from "./MenuItem";
 import NavSide from "../NavSide";
 
