@@ -19,7 +19,7 @@ function NavSide() {
 
                     ))
                 }
-                <Link to={{ pathname: "https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharings" }}
+                <Link to={{ pathname: "https://drive.google.com/file/d/1fExRHP5TUE8raNq0foWv_sCt2Gy7CG6k/view?usp=sharing" }}
                     target="_blank"
                     className="menu-item"
                     style={{ color: "white" }}>

@@ -33,7 +33,7 @@ export default function NavHeader() {
                 }
                 <Menu.Item key="5">
                     <a className="menu-item" style={styles.menuItem} target="blank_"
-                        href="https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharing">
+                        href="https://drive.google.com/file/d/1fExRHP5TUE8raNq0foWv_sCt2Gy7CG6k/view?usp=sharing">
                         <p className="menu-text">Resume</p>
                     </a>
                 </Menu.Item>

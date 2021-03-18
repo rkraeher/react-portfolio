@@ -11,7 +11,7 @@
 6. [Questions](#questions)
     
 ## Usage
-Visit my portfolio here: https://rkraeher.github.io/react-portfolio/
+Visit my portfolio here: https://rudikraeher.com/
 
 ## Technologies
 Ant Design, EmailJS, Font Awesome, Less, React.js
