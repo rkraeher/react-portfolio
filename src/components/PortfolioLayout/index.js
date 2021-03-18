@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import { useState } from "react";
 import Project from "../Project";
 import NavHeader from "../NavHeader";
-
 import "./styles.css";
 
 const { Content, Footer } = Layout;
@@ -15,7 +14,6 @@ const styles = {
         transition: "0.3s"
     }
 };
-
 
 //TODO: Add Moment.js to footer data for dynamic year update. 
 
@@ -37,21 +35,23 @@ function PortfolioLayout() {
         <div>
             <Layout className="layout">
                 <NavHeader />
+
                 <Content className="content">
                     <div className="site-layout-content">
                         <Project />
                     </div>
                 </Content>
+
                 <Footer style={styles.footer}
                     onMouseOver={handleOver}
                     onMouseLeave={handleLeave}
                     onClick={() => window.scrollTo(0, 0)}>
                     {footer}
                 </Footer>
+
             </Layout>
         </div>
     );
 }
-
 export default PortfolioLayout;
 

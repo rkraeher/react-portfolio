@@ -1,36 +1,32 @@
-//import * as FaIcons from "react-icons/fa";
-import { useState } from "react";
-import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
-import { MailOutlined } from '@ant-design/icons';
-import './styles.css';
+import { slide as SideMenu } from "react-burger-menu";
+import { Link } from "react-router-dom";
+import NavSideItems from "./NavSideItems";
+import { IoDocumentText } from "react-icons/io5";
+import "./styles.css";
+import "../PortfolioLayout/styles.css";
 
-const { SubMenu } = Menu;
+//Todo: Fix the bad practice span work around
 
-export default function NavSide() {
-    const [current, setCurrent] = useState("1");
-    //const [inlineCollapsed, setInlineCollapsed] = useState(false)
-    function handleClick(e) {
-        //setInlineCollapsed(!inlineCollapsed);
-        setCurrent(e.key);
-    };
+function NavSide() {
     return (
-        <>
-            <Menu
-                onClick={handleClick}
-                style={{ width: 256, backgroundColor: "black" }}
-                //defaultOpenKeys={['sub1']}
-                //inlineCollapsed={true}
-                selectedKeys={current}
-                mode="inline"
-            >
-                <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
-                    <Menu.Item key="1">Option 1</Menu.Item>
-                    <Menu.Item key="2">Option 2</Menu.Item>
-                    <Menu.Item key="3">Option 3</Menu.Item>
-                    <Menu.Item key="4">Option 4</Menu.Item>
-                </SubMenu>
-            </Menu>
-        </>
+        <div>
+            <SideMenu right>
+                {
+                    NavSideItems.map(item => (
+                        <Link to={item.route} key={item.id} id={item.id} className="menu-item" style={{ color: "white" }}>
+                            {item.icon}<span style={{ color: "transparent" }}>""</span>{item.name}
+                        </Link>
+
+                    ))
+                }
+                <Link to={{ pathname: "https://docs.google.com/document/d/1af2P9HLaxX5_a9ufTnxN1ftak5tZQeSC_sA8KiKcw_4/edit?usp=sharings" }}
+                    target="_blank"
+                    className="menu-item"
+                    style={{ color: "white" }}>
+                    <IoDocumentText /><span style={{ color: "transparent" }}>""</span>Resume
+                </Link>
+            </SideMenu>
+        </div >
     );
 }
+export default NavSide;
